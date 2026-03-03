@@ -1,0 +1,21 @@
+{
+  "name": "ai-pbl02-copy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd player-stats-frontend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "mongodb": "^7.1.0",
+    "recharts": "^3.7.0"
+  }
+}
